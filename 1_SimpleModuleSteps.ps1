@@ -45,5 +45,8 @@ Things to try out:
 Use the manifest file to export commands
 Make a change and publish a new version
 Update you module from the newly published version
+Review the manifest file. See what other options are there.
 
 #########################>
+
+

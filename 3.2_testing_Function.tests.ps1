@@ -6,7 +6,7 @@ BeforeAll {
     #Load the function into memory
     . "$thisPath\3.1_testing_Function.ps1"
 
-    $ipToTest = "111.112.113.114"
+    $script:ipToTest = "111.112.113.114"
 }
 
 Describe "Get-Octet tests" {
@@ -52,7 +52,7 @@ Describe "Get-Octet tests" {
     Context "Tests3" -Tag "TestCases2" {
 
         BeforeDiscovery {
-            $testCases = @(
+            $script:testCases = @(
                 @{octet = 1; expected = 111}
                 @{octet = 2; expected = 112}
                 @{octet = 3; expected = 113}

@@ -7,6 +7,7 @@ Windows PowerShell modules allow you to partition, organize, and abstract your W
 1) Allows us to maintain a standard structure
 1) Can be centralised into a PS Repo
 1) Ease of access through PowershellGet
+1) Great for debugging
 1) Makes it simple to execute logic in the same way from various locations, e.g. locally or a build server
 1) Versioning. Can hold and target specific versions
 1) A module can be packaged or maintained in a PS Repo

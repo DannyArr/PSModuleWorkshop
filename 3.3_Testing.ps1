@@ -15,3 +15,13 @@ Invoke-Pester -Path ".\3.2_testing_Function_Complete.tests.ps1" -Tag "TestCases1
 Invoke-Pester -Path ".\3.2_testing_Function_Complete.tests.ps1" -Tag "TestCases2"
 
 Invoke-Pester -Path ".\3.2_testing_Function_Complete.tests.ps1" -Tag MocksExample, TestCases2
+
+
+# How to mock an object
+$services = Get-Service
+$services | Export-Clixml -Path ".\services.xml"
+
+$servicesnapshot = Import-Clixml -Path ".\services.xml"
+
+$services
+$servicesnapshot

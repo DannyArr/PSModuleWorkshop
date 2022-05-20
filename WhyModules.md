@@ -19,3 +19,5 @@ Windows PowerShell modules allow you to partition, organize, and abstract your W
 Of course a module isn't always needed. Sometime a simple script is all that's required.
 
 [Writing a Windows PowerShell Module](https://docs.microsoft.com/en-us/powershell/scripting/developer/module/writing-a-windows-powershell-module?view=powershell-7.2&viewFallbackFrom=powershell-7.1)
+
+Maybe try a code dojo: [Rock Paper Scissors Lizard Spock](https://github.com/robcthegeek/dojo-starter-facilitator/blob/main/problems/Rock-Paper-Scissors-Lizard-Spock.md)

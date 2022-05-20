@@ -1,4 +1,4 @@
-# https://pester-docs.netlify.app/docs/commands/BeforeAll
+# https://pester.dev/docs/usage/discovery-and-run
 
 BeforeAll {
     $thisPath = $PSScriptRoot
@@ -16,6 +16,7 @@ Describe "Get-Octet tests" {
         it "1st Octet is 111" {
             $result = Get-Octet -IP $ipToTest -Octet 1
             $result | Should -Be "111"
+            # https://pester.dev/docs/assertions/assertions
         }
 
         it "2nd Octet is 112" {
@@ -35,6 +36,7 @@ Describe "Get-Octet tests" {
 
     }
 
+    # https://pester.dev/docs/usage/data-driven-tests
     Context "Tests2" -Tag "TestCases1" {
 
         it "Octet <octet> should be '<expected>'" -Foreach @(
